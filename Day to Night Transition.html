@@ -1,0 +1,116 @@
+<!-- By Vaghasiya Yash :) -->
+
+
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+         
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+       
+        <title>Day to Night Transition</title>
+        <style>
+        	body 
+{
+    background-color:skyblue;
+    animation:colorchange 12s linear 1s infinite  alternate;
+    -webkit-animation:colorchange 12s linear 1s infinite alternate;
+    margin:0px;
+}
+
+@keyframes colorchange
+{
+    0%{background-color:skyblue;}
+    100%{background-color:black;}
+}
+
+@-webkit-keyframes colorchange
+{
+    0%{background-color:skyblue;}
+    100%{background-color:black;}
+}
+
+.smile
+{
+    font-style:italic;
+}
+
+.day_night
+{
+    position:fixed;
+    top:5%;
+    background-color:yellow;
+    min-height:10%;
+    min-width:15%;
+    border-radius:50%;
+    animation:sun_moon 12s linear 1s infinite  alternate;
+    -webkit-animation:sun_moon 12s linear 1s infinite  alternate;
+}
+
+@keyframes sun_moon
+{
+    0%
+    {
+    background-color:yellow;
+    left:1%;
+    }
+    100%
+    {
+    background-color:white;
+    left:85%;
+    }
+}
+
+@-webkit-keyframes sun_moon
+{
+    0%
+    {
+    background-color:yellow;
+    left:1%;
+    }
+    100%
+    {
+    background-color:white;
+    left:85%;
+    }
+}
+
+h2
+{
+    padding-top:50%;
+    text-align:center;
+    font-family:serif;  
+    font-weight:bold;
+    color:yellow;
+    animation:smile 12s linear 1s infinite  alternate;
+    -webkit-animation:smile 12s linear 1s infinite  alternate;
+}
+
+@keyframes smile
+{
+    0%{color:yellow;}
+    100%{color:white;}
+}
+
+@-webkit-keyframes smile
+{
+    0%{color:yellow;}
+    100%{color:white;}
+}
+        </style>
+        
+    </head>
+    
+    <body>
+    
+        <div class="day_night"></div>
+        
+        <h2>☺️<span class="smile">Be Happy</span>☺️</h2>
+        
+    </body>
+    
+</html>
